@@ -1,0 +1,330 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Universal styles for all screen sizes */
+body {
+    font-family: 'Roboto', sans-serif; /* Updated font */
+}
+
+/* Small phones (portrait) */
+@media (min-width: 319px) and (max-width: 480px) {
+    #top-container {
+        height: 300px;
+        width: 100%;
+    }
+    #top-container h1 {
+        margin-left: 20%;
+        font-size: 22px; /* Adjusted size */
+    }
+    .intro-heading, .intro-text {
+        padding: 0 15px;
+        font-size: 1rem; /* Adjusted size */
+    }
+}
+
+/* Medium phones (landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+    #top-container {
+        height: 350px;
+        width: 100%;
+    }
+    #top-container h1 {
+        margin-left: 15%;
+        font-size: 26px; /* Adjusted size */
+    }
+    .intro-heading, .intro-text {
+        padding: 0 20px;
+        font-size: 1.1rem; /* Adjusted size */
+    }
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #top-container {
+        height: 400px;
+        width: 100%;
+    }
+    #top-container h1 {
+        margin-left: 15%;
+        font-size: 30px; /* Adjusted size */
+    }
+    .intro-heading {
+        font-size: 1.75rem; /* Adjusted size */
+    }
+}
+
+/* Small laptops */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    #top-container {
+        height: 450px;
+        width: 100%;
+    }
+    #top-container h1 {
+        margin-left: 10%;
+        font-size: 34px; /* Adjusted size */
+    }
+    .intro-heading {
+        font-size: 2rem; /* Adjusted size */
+    }
+    .intro-text {
+        font-size: 1.25rem; /* Adjusted size */
+    }
+}
+
+/* Desktops and large screens */
+@media (min-width: 1367px) {
+    #top-container {
+        height: 500px;
+        width: 100%;
+    }
+    #top-container h1 {
+        margin-left: 10%;
+        font-size: 38px; /* Adjusted size */
+    }
+    .intro-heading {
+        font-size: 2.5rem; /* Adjusted size */
+    }
+    .intro-text {
+        font-size: 1.5rem; /* Adjusted size */
+    }
+}
+
+/* Top Container Styles */
+#top-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #6A9C89;
+    position: relative;
+    overflow: hidden;
+}
+
+#main-background {
+    position: absolute;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#top-container h1 {
+    color: black;     /* Text color for better contrast */
+    z-index: 2;       /* Set a higher z-index for the h1 to bring it to the front */
+    position: relative; /* Ensure it obeys the z-index stacking */
+}
+
+/* Custom styles for testimonial-card */
+.testimonial-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px; /* Padding for stable layout */
+    margin: 10px; /* Margin to separate cards */
+    flex: 1; /* Allow cards to grow equally */
+}
+
+.testimonial-card p {
+    font-style: italic;
+    font-size: 1rem; /* Adjusted size */
+    min-height: 50px; /* Ensures space for 2-3 lines */
+}
+
+.testimonial-card footer {
+    font-size: 0.875rem;
+    text-align: right;
+    margin-top: 1rem;
+    color: #6c757d;
+}
+
+/* Intro Section Styles */
+.intro-section {
+    text-align: center;
+    padding: 40px 50px;
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef); /* Subtle gradient */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 20px; /* Add some margin to separate from other sections */
+}
+
+.intro-section h3 {
+    color: #343a40; /* Darker text color */
+    margin-bottom: 15px;
+    font-size: 2.5rem; /* Adjusted size */
+}
+
+.intro-section p {
+    color: #495057; /* Slightly darker paragraph color */
+    font-size: 1.25rem; /* Adjusted size */
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: wrap; /* Allow wrapping to keep it responsive */
+    justify-content: center; /* Center the content */
+    padding: 20px; /* Padding for spacing */
+}
+
+/* Contact Us Section */
+#contact-us {
+    text-align: center;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #6A9C89;
+    border-radius: 50%;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #4b7962;
+}
+
+.instagram {
+    background-color: #E1306C;
+}
+
+.email {
+    background-color: #0072C6;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Counters Section */
+.counters-section {
+    background-color: #f8f9fa;
+}
+
+.counter-wheel {
+    width: 150px;
+    height: 150px;
+    background-color: #6A9C89; /* Background color for the wheel */
+    color: white; /* Text color inside the wheel */
+    font-size: 2.5rem; /* Font size of the counter */
+    font-weight: bold; /* Bold text inside the wheel */
+    border: 6px solid #fff; /* Optional white border for the wheel */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for the wheel */
+    transition: transform 0.3s ease-in-out;
+}
+
+.counter-wheel:hover {
+    transform: scale(1.1); /* Slight scaling effect when hovered */
+}
+
+.counters-section h3 {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.counter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .counter-wheel {
+        width: 100px;
+        height: 100px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Footer Styles */
+.footer-section {
+    background-color: #6A9C89; /* Match the theme color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Padding for spacing */
+    position: relative; /* Positioning */
+    bottom: 0; /* Aligns the footer to the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer-section p {
+    margin: 0; /* Remove default margins */
+}
+
+/* News Banner Styles */
+.news-banner {
+    background-color: rgba(106, 156, 137, 0.7); /* Translucent background */
+    color: white; /* Text color */
+    padding: 10px 0; /* Padding for spacing */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Positioning context */
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    width: 100%; /* Full width */
+}
+
+/* Flexbox properties for static display */
+.news-content {
+    display: flex; /* Use flex for alignment */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center the items */
+}
+
+/* Adjusting the spacing between items */
+.news-item {
+    margin: 5px; /* Space between items */
+    font-size: 1.2rem; /* Font size */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .news-content {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+}
+
+
+/* About Container Styles */
+#about-container {
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+}
+
+/* Testimonial Section Styles */
+.testimonial-section {
+    padding: 20px; /* Padding for spacing */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack testimonials vertically */
+    align-items: center; /* Center align testimonials */
+}

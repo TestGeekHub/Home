@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGH</title>
+  <link rel="stylesheet" href="css/styles.css"> <!-- External CSS link -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Geek</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-container">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials-container">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Top Container -->
+  <div id="top-container">
+    <img id="main-background" src="Images/main-background.png" alt="main-background">
+    <div>
+      <h1>Welcome to <br> <span class="Title-text">TestGeekHub</span></h1>
+    </div>
+  </div>
+
+<!-- Intro Section -->
+<section class="intro-section container d-flex flex-column justify-content-center align-items-center">
+  <h3>Innovative Online Exam Solutions</h3>
+  <p>At TestGeekHub, we specialize in providing innovative online exam solutions designed to meet the diverse needs of students, professionals, and organizations. Our mission is to revolutionize the way assessments are conducted by offering a comprehensive, user-friendly platform that ensures integrity, accessibility, and efficiency.</p>
+</section>
+
+
+<!-- Counters Section -->
+<section id="counters" class="counters-section py-5">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <div class="counter-wheel rounded-circle mx-auto d-flex align-items-center justify-content-center" data-target="2000">
+          <span class="counter">0</span>
+        </div>
+        <h3 class="mt-3">Students Enrolled</h3>
+      </div>
+      <div class="col-md-3">
+        <div class="counter-wheel rounded-circle mx-auto d-flex align-items-center justify-content-center" data-target="1800">
+          <span class="counter">0</span>
+        </div>
+        <h3 class="mt-3">Students Completed</h3>
+      </div>
+      <div class="col-md-3">
+        <div class="counter-wheel rounded-circle mx-auto d-flex align-items-center justify-content-center" data-target="05">
+          <span class="counter">0</span>
+        </div>
+        <h3 class="mt-3">Years of Service</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about-container" class="container my-5">
+    <div class="row">
+      <div class="col-md-6 d-flex flex-column justify-content-center">
+        <h2>About Us</h2>
+        <p>We are a dedicated team of educators, technology experts, and assessment professionals committed to enhancing the online testing experience. Our platform is built on a foundation of cutting-edge technology and best practices in exam administration, allowing us to deliver secure and reliable online assessments.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="Images/about-us.png" alt="About Us" class="img-fluid rounded">
+      </div>
+    </div>
+  </section>
+
+
+<!-- Testimonials Section -->
+<section id="testimonials-container" class="container my-5">
+  <h2 class="text-center mb-4">What Our Users Say</h2>
+  <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="testimonial-section d-flex justify-content-center">
+          <div class="testimonial-card p-4">
+            <p>"TestGeekHub transformed my exam preparation! The platform is intuitive, making it easy to find resources. I aced my tests thanks to their innovative tools!"</p>
+            <footer class="blockquote-footer">Sarah M.</footer>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial-section d-flex justify-content-center">
+          <div class="testimonial-card p-4">
+            <p>"With TestGeekHub, I finally found the study method that works for me! Their resources are top-notch."</p>
+            <footer class="blockquote-footer">Michael S.</footer>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial-section d-flex justify-content-center">
+          <div class="testimonial-card p-4">
+            <p>"As a busy student, I found TestGeekHub to be a lifesaver. Their exam solutions helped me manage my time effectively. Highly recommended for anyone serious about success!"</p>
+            <footer class="blockquote-footer">Jason T.</footer>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial-section d-flex justify-content-center">
+          <div class="testimonial-card p-4">
+            <p>"TestGeekHub is a game-changer! I improved my scores significantly in just a few weeks."</p>
+            <footer class="blockquote-footer">Anna L.</footer>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial-section d-flex justify-content-center">
+          <div class="testimonial-card p-4">
+            <p>"The variety of practice exams on TestGeekHub is incredible. It gave me the confidence I needed for my finals. I couldn't have asked for a better platform!"</p>
+            <footer class="blockquote-footer">Emily R.</footer>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial-section d-flex justify-content-center">
+          <div class="testimonial-card p-4">
+            <p>"Thanks to TestGeekHub, I nailed my exams! Highly effective and easy to use!"</p>
+            <footer class="blockquote-footer">Mark D.</footer>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial-section d-flex justify-content-center">
+          <div class="testimonial-card p-4">
+            <p>"TestGeekHub is the perfect partner for exam prep. The user-friendly interface and diverse resources made studying enjoyable. I wish I had found it sooner!"</p>
+            <footer class="blockquote-footer">Priya N.</footer>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial-section d-flex justify-content-center">
+          <div class="testimonial-card p-4">
+            <p>"I recommend TestGeekHub to anyone serious about their exams! The results speak for themselves!"</p>
+            <footer class="blockquote-footer">Anna L.</footer>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial-section d-flex justify-content-center">
+          <div class="testimonial-card p-4">
+            <p>"I was struggling with my coursework until I discovered TestGeekHub. Their comprehensive exam solutions made all the difference. Thank you for helping me succeed!"</p>
+            <footer class="blockquote-footer">Laura K.</footer>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial-section d-flex justify-content-center">
+          <div class="testimonial-card p-4">
+            <p>"The best investment I made for my education was signing up for TestGeekHub! It truly elevated my study game."</p>
+            <footer class="blockquote-footer">Tom C.</footer>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonial-section d-flex justify-content-center">
+          <div class="testimonial-card p-4">
+            <p>"The support from TestGeekHub is unmatched! Their tools guided me through challenging topics and boosted my confidence. I am now a proud graduate!"</p>
+            <footer class="blockquote-footer">Ben P.</footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+
+<!-- News Banner Section -->
+<div class="news-banner">
+  <div class="news-content">
+      <div class="news-item">Lockdown, Proctorio, Ati</div>
+      <div class="news-item">Honorlock, Proctored, Auto proctor</div>
+      <div class="news-item">In-class, Evolve, Non-proctored</div>
+  </div>
+</div>
+
+
+
+
+
+  <!-- Contact Us Section -->
+  <section id="contact-us" class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+
+    <!-- Added content for Guaranteed Passing Score -->
+    <div class="contact-info">
+      <h3>Guaranteed Passing Score with Our Online Exams!</h3>
+      <p>Are you a student struggling with exams? We're here to help! Enroll in our online exam services and achieve a guaranteed passing score.</p>
+      <ul>
+        <li>🌟 Convenient online exam scheduling and assistance</li>
+        <li>📚 Expert guidance from qualified instructors</li>
+      </ul>
+      <p>📚 <strong>Why Choose Us?</strong></p>
+      <ul>
+        <li>Flexible scheduling to fit your busy student life</li>
+        <li>24/7 support</li>
+        <li>✔ Affordable rates</li>
+      </ul>
+      <p>Don't let exams stress you out. Join us today and ensure your success!</p>
+      <p>📞 Contact us now to get started!</p>
+    </div>
+
+    <div class="contact-buttons">
+      <a href="https://www.instagram.com/geek.hubb?igsh=MWt5ZWF0c215bWVzdA%3D%3D&utm_source=qr" class="contact-button instagram" target="_blank">
+        <i class="fa-brands fa-instagram" style="color: white;"></i>
+      </a>
+      <a href="mailto:angelgaurdian998@gmail.com" class="contact-button email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/+15139054903" class="contact-button whatsapp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </section>
+
+<!-- Footer Section -->
+<footer class="footer-section">
+  <div class="container text-center">
+    <p>&copy; 2024 TestGeekHub. All rights reserved.</p>
+    <p><a href="nd-agreement.html" class="text-decoration-none">Non-Disclosure Agreement</a></p>
+  </div>
+</footer>
+
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script> <!-- External JS for counter animations -->
+</body>
+</html>
